@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&family=Ubuntu&family=Varela+Round&display=swap');
+body{
+    background-color: antiquewhite;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+nav ul{
+    color: wheat;
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    height: 44px;
+    background-color: #016064;
+}
+
+nav ul li{
+    padding: 0 10px;
+}
+
+.brand img{
+    margin-top: 0px;
+    padding: 0px;
+    width: 45px;
+}
+.brand{
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+
+.container{
+    min-height: 72vh;
+    background-color: #016064;
+    color: white;
+    font-family: 'Varela Round', sans-serif;
+    display: flex;
+    width: 70%;
+    margin: 20px auto;
+    border-radius: 12px;
+    padding: 34px;
+    background-image: url('bg3.jpg');
+    background-size: 100%;
+}
+
+.songList h1{
+    margin-top: -15px;
+}
+
+.bottom{
+    position: sticky;
+    height: 125px;
+    background-color: #016064;
+    bottom: 0;
+    color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.icons{
+    margin-top: 14px;
+}
+
+.icons i{
+    cursor: pointer;
+}
+#myProgressBar{
+    width: 80vw;
+    cursor: pointer;
+}
+
+.songItemContainer{
+    margin-top: 45px;
+
+}
+
+.songItem{
+    height: 30px;
+    display: flex;
+    background-color: white;
+    color: #016064;
+    margin: 12px 0;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 34px;
+}
+
+.songItem img{
+    width: 28px;
+    margin: 0 23px;
+    border-radius: 34px;
+}
+
+.timestamp{
+   margin: 0 23px;
+}
+
+.timestamp i{
+    cursor: pointer;
+}
+
+.songInfo{
+    position: absolute;
+    left: 10vw;
+    align-items: center;
+    display: flex;
+    font-family: 'Varela Round', sans-serif;
+}
+.songInfo img{
+    opacity: 0;
+    transition:opacity 0.4s ease-in;
+}
+
+@media only screen and (max-width: 1100px) {
+    body {
+      background-color: red;
+    }
+  }
